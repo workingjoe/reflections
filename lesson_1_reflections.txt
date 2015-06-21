@@ -1,0 +1,19 @@
+syntax of DIFF -u is a bit rough to decode from bash prompt
+
+How could having easy access to the entire history of a file make you 
+a more efficient programmer in the long term?
+
+back history on how a problem was solved is good
+to refresh self when re-visiting code in future!
+
+What do you think are the pros and cons of manually choosing when to create a commit, 
+like you do in Git, vs having versions automatically saved, like Google docs does?
+
+logically sensible points to return to, but maybe not the EXACT place where
+errors happened.
+
+How can you use the commands git log and git diff to view the history of files
+
+using GIT LOG - can look thru comments to find possibly useful ID's
+then GIT DIFF that ID verses older (lower in list) one to see changes
+

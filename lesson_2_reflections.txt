@@ -1,0 +1,15 @@
+configure editor:
+  git config --global --list 
+  git config --global core.editor "'C:/Program\ Files\ (x86)/IDM Computer\ Solutions/UltraEdit-32/uedit32.exe' -n -w"
+
+
+What happens when you initialize a repository? Why do you need to do it?
+
+Creates hidden folders with info about what files and diffs are there
+
+How is the staging area different from the working directory 
+and the repository? What value do you think it offers?
+
+staging area is 'pre-checkin' and can be a subset that are ONLY 
+those files that have changed (potentially).
+https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf
