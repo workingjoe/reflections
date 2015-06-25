@@ -13,3 +13,32 @@ and the repository? What value do you think it offers?
 staging area is 'pre-checkin' and can be a subset that are ONLY 
 those files that have changed (potentially).
 https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf
+
+How can you use the staging area to make sure you have one commit per logical change?
+use git add to put in staging area, then git --staging to see changes between HEAD
+and staging to be sure we have expected changes only.
+
+Branches: named commit instead of characters-- 
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+experimental versions, situation where need to keep 'active' an old tested copy
+MASTER is always good one-- new feature branches for new 'context' to fix bug...
+
+
+procedure:
+   git branch
+   git branch 'name-of-new-tip-branch'
+   git checkout 'name-of-new-tip-branch' 
+   git status (to see that name-of-new-tip is now with asterisk
+   -- edit changes --
+   git add files-that-changed
+   git commit 
+   git status
+   
+   git log --graph --oneline
+   
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merge combines CHECKEDOUT branch with some other branch.  log will show time-date ordered list.
+But possible to isolate 'unreachable' branches.  Also parent relationship is obscured.
+git show ID -- will show diff between commit and parent no matter what it was..
+
+git branch -d 'label'  = delete a label from the branch
