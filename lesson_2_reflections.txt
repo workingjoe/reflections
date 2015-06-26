@@ -42,3 +42,9 @@ But possible to isolate 'unreachable' branches.  Also parent relationship is obs
 git show ID -- will show diff between commit and parent no matter what it was..
 
 git branch -d 'label'  = delete a label from the branch
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+git MERGE is another commit. pro: if easy text substitution, auto will be fast
+however, it screws up conflicting files with <<<<< and |||||| tagged blocks of lines - ugh
+MANUALLY would require a specialized editor (good idea!) 
