@@ -48,3 +48,8 @@ What are the pros and cons of Git’s automatic merging vs. always doing merges ma
 git MERGE is another commit. pro: if easy text substitution, auto will be fast
 however, it screws up conflicting files with <<<<< and |||||| tagged blocks of lines - ugh
 MANUALLY would require a specialized editor (good idea!) 
+
+To use GITHUB from command line (I am using msysgit) - easiest to store password
+so don't get prompted for every commit... here is command-line way to do just that...
+git config --global credential.helper wincred
+
